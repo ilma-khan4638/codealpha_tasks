@@ -1,0 +1,121 @@
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Serenora Gallery — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <a href="index.html" class="logo">Serenora</a>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="cta">Contact</a>
+      </nav>
+
+      <div class="socials">
+  <a aria-label="instagram" href="#">▣</a>
+  <a aria-label="twitter" href="#">◒</a>
+  <a aria-label="facebook" href="#">🅕</a>
+  <a aria-label="whatsapp" href="#">🟢</a>
+</div>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero like 2nd image but for an image gallery -->
+  <main>
+    <section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="https://videos.pexels.com/video-files/857195/857195-hd_1280_720_25fps.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content wrap">
+    <h1 class="hero-title">Nature — Curated Image Gallery</h1>
+    <h6 class="hero-title" style="font-size: medium;">Nature Captured. Peace Preserved.</h6>
+    <p class="hero-lead">Explore the serene landscapes and quiet moments of the wild at Verde.</p>
+    <a href="gallery.html" class="btn">Explore Gallery</a>
+  </div>
+</section>
+
+
+    <section class="featured wrap">
+      <h2>Featured Collection</h2>
+      <div class="masonry" id="home-masonry">
+        <!-- a few big images to make homepage aesthetic -->
+        <figure><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1600&q=60" alt="landscape"><figcaption>Coastal Carriage</figcaption></figure>
+        <figure><img src="misty mountain.jpeg" alt="mountains"><figcaption>Misty Peaks</figcaption></figure>
+        <figure><img src="serene.jpeg" alt="pier"><figcaption>Serene Pier</figcaption></figure>
+        <figure><img src="lonely cabin.jpeg" alt="cabin"><figcaption>Lonely Cabin</figcaption></figure>
+        <figure><img src="lake.jpeg" alt="lake"><figcaption>Forest Lake</figcaption></figure>
+        <figure><img src="autum.jpeg" alt="autumn"><figcaption>Autumn Glow</figcaption></figure>
+      </div>
+    </section>
+<!-- ✨ NEW SECTION: Quote -->
+    <section class="quote-section">
+      <blockquote>
+        “Photography is the art of freezing time — a fraction of a second that tells a timeless story.”
+      </blockquote>
+      <cite>— Serenora Gallery</cite>
+    </section>
+    <section class="about-snip wrap">
+      <h3>Why this gallery?</h3>
+      <p>We combine editorial-grade photography with modern minimal layout and subtle motion to present images in a calm and immersive way. Click any image to open the lightbox.</p>
+    </section>
+  </main>
+
+ <footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-about">
+      <h3>Serenora Gallery</h3>
+      <p>Showcasing editorial-grade photography with minimal design and immersive visuals. Discover art that tells a story.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <nav class="foot-links">
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+         <a aria-label="instagram" href="#">▣</a>
+        <a aria-label="twitter" href="#">◒</a>
+        <a aria-label="facebook" href="#">🅕</a>
+  <a aria-label="whatsapp" href="#">🟢</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year4"></span> Serenora Gallery. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Lightbox element used across pages -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="close-lb" aria-label="close">✕</button>
+    <img src="" alt=""/>
+    <div class="lb-caption"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
